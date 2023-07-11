@@ -1,0 +1,63 @@
+.main{
+  height: auto;
+}
+.stack-index {
+  background-color: #263142;
+  color: #fff !important;
+}
+.main-desc {
+  display: flex;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+
+.info > p {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.info > p > span {
+  color: #9fbeff;
+  margin: 0 5px;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #bdc7c9;
+}
+
+.all-options > .MuiSvgIcon-root {
+  color: #bdc7c9;
+  font-size: large;
+  margin: 5px 0;
+}
+
+pre {
+  display: flex;
+  width: 90px;
+  flex-wrap: wrap;
+}
+.ql-container.ql-snow {
+  border: 0px;
+}
+.button {
+  background-color: #385577;
+  color: #fff;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #9fbeff;
+  color: #263142;
+}
+.comments > p:hover{
+  color: #9fbeff;
+}
+
+.main-top > h2, .question-answer > div, .author > small, .comments > p, .auth-details > p {
+  color: #fff;
+}
