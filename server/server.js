@@ -24,18 +24,11 @@ app.use((req, res, next) => {
 });
 
 app.use("/api", router);
-app.use("/uploads", express.static(path.join(__dirname, "/../uploads")));
-app.use(express.static(path.join(__dirname, "/../frontend/build")));
+app.use(express.static("public"));
 
-app.get("*", (req, res) => {
-  try {
-    res.sendFile(path.join(`${__dirname}/../frontend/build/index.html`));
-  } catch (e) {
-    res.send("Welcome to Coders Community Website");
-  }
-});
 
 app.use(cors());
+app.options("*", cors());
 
 app.listen(PORT, () => {
   console.log(`Coders Community API is running on PORT No- ${PORT}`);
