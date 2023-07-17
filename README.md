@@ -1,4 +1,4 @@
-# Review Scrapper
+# Coders Community
 
 ## Description
 Welcome to Coders Community! This is a community app similar to Stack Overflow which helps coders to ask questions to their peers and other community members, made by using MERN Stack framework.
