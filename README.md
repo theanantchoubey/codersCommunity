@@ -16,13 +16,13 @@ It is developed using the following tech stacks --:
 4. Authentication - [Firebase](http://firebase.google.com/)
 
 ### How to Use -
-STEP 1: Login Using the following User Information or register -
-    Email: testing@gmail.com
-    Password: testing
-STEP 2: Enter to the coders community and ask your doubts
-STEP 3: Give Feedback to me.
+STEP 1: Login Using the following User Information or register -<br/>
+    Email: testing@gmail.com<br/>
+    Password: testing<br/>
+STEP 2: Enter to the coders community and ask your doubts<br/>
+STEP 3: Give Feedback to me.<br/>
 
-### Live Link - [Coders Community](https://reviewscrapper.netlify.app/)
+### Live Link - [Coders Community](https://coderscommunity.netlify.app/)
 
 ### Future Goals
 1. Building a Profile Management System
