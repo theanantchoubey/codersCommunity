@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASURING_ID
+  apiKey: "AIzaSyCjDcIfPkL-QnSk023qu_xTBDzICzFY7g0",
+  authDomain: "coderscommunity039.firebaseapp.com",
+  projectId: "coderscommunity039",
+  storageBucket: "coderscommunity039.appspot.com",
+  messagingSenderId: "88927909661",
+  appId: "1:88927909661:web:bad8256d72101dcf7513f4",
+  measurementId: "G-3SDFF51W88"
 };
 
 // eslint-disable-next-line

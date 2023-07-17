@@ -3,12 +3,12 @@ import Sidebar from "./Sidebar/Sidebar";
 import "./index.css";
 import Main from "./Main/Main";
 import axios from "axios";
-
+import { DATABASE_URL } from "../../helper";
 function Index() {
   const [questions, setQuestions] = useState([]);
 
   async function getQuestion(isCancelled) {
-    await axios.get("http://localhost:5000/api/question").then((res) => {
+    await axios.get(`${DATABASE_URL}/api/question`).then((res) => {
       if (!isCancelled) setQuestions(res.data.reverse());
     });
   };

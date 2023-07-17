@@ -8,7 +8,7 @@ import axios from "axios";
 import TagInput from "@eidellev/react-tag-input";
 import { selectUser } from "../../feature/userSlice";
 import { useHistory } from "react-router-dom";
-
+import { DATABASE_URL } from "../../helper";
 function Index() {
   const user = useSelector(selectUser);
   var toolbarOptions = [
@@ -74,9 +74,8 @@ function Index() {
         tag: JSON.stringify(tag),
         user: user,
       };
-      console.log(bodyJSON.user);
       await axios
-        .post("http://localhost:5000/api/question", bodyJSON)
+        .post(`${DATABASE_URL}/api/question`, bodyJSON)
         .then((res) => {
           alert("Question added successfully");
           history.push("/");

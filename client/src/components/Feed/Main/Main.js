@@ -7,7 +7,7 @@ import AllQuestions from "../AllQuestions/AllQuestions";
 function Main({ questions }) {
 
   return (
-    <div className="main">
+    <div className="main flex">
       <div className="main-container">
         <div className="main-top">
           <h2>All Questions</h2>

@@ -12,6 +12,7 @@ import { useSelector } from "react-redux";
 import { selectUser } from "../../feature/userSlice";
 import { stringAvatar } from "../../utils/Avatar";
 import { userName } from "../../utils/Name";
+import { DATABASE_URL } from "../../helper";
 
 function MainQuestion() {
   var toolbarOptions = [
@@ -82,7 +83,7 @@ function MainQuestion() {
   useEffect(() => {
     async function getFunctionDetails() {
       await axios
-        .get(`http://localhost:5000/api/question/${id}`)
+        .get(`${DATABASE_URL}/api/question/${id}`)
         .then((res) => setQuestionData(res.data[0]))
         .catch((err) => console.log(err));
     }
@@ -91,7 +92,7 @@ function MainQuestion() {
 
   async function getUpdatedAnswer() {
     await axios
-      .get(`http://localhost:5000/api/question/${id}`)
+      .get(`${DATABASE_URL}/api/question/${id}`)
       .then((res) => setQuestionData(res.data[0]))
       .catch((err) => console.log(err));
   }
@@ -109,7 +110,7 @@ function MainQuestion() {
     };
 
     await axios
-      .post("http://localhost:5000/api/answer", body, config)
+      .post(`${DATABASE_URL}/api/answer`, body, config)
       .then(() => {
         alert("Answer added successfully");
         setAnswer("");
@@ -125,7 +126,7 @@ function MainQuestion() {
         comment: comment,
         user: user,
       };
-      await axios.post(`http://localhost:5000/api/comment/${id}`, body).then((res) => {
+      await axios.post(`${DATABASE_URL}/api/comment/${id}`, body).then((res) => {
         setComment("");
         setShow(false);
         getUpdatedAnswer();

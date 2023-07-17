@@ -49,7 +49,6 @@ function Index() {
     } else {
       signInWithEmailAndPassword(auth, email, password)
         .then((res) => {
-          // console.log(res);
           history.push("/");
           setLoading(false);
         })
