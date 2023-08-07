@@ -1,8 +1,10 @@
 .sidebar {
   display: flex;
   padding: 20px 0px 10px 10px;
-  /* height: 100%; */
-  border-right: 1px solid #ddd;
+  left: 0;
+  height: 100%;
+  position: fixed;
+  border-right: 1px solid #000;
   flex: 0.5;
   max-width: 200px;
 }
@@ -28,15 +30,15 @@
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 a:hover {
-  color: #d6f3ff;
+  opacity: 0.8;
 }
 
 .sidebar-option > p {
-  color: #fff;
+  color: #000;
   font-size: 14px;
 }
 
@@ -53,20 +55,21 @@ a:hover {
 }
 
 .link-tag:hover {
-  background-color: #3a485d;
-  border-right: 5px solid rgb(107, 228, 255);
+  background-color: #fff7f3;
+  color: #fff !important;
+  border-right: 5px solid #000;
 }
 
 .link-tag > .MuiSvgIcon-root {
   font-size: 18px;
   margin-right: 5px;
-  color: rgb(107, 228, 255);
+  color: #000;
 }
 
 .tags {
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: #000;
   margin: 0px 20px;
 }
 
@@ -76,5 +79,5 @@ a:hover {
 }
 
 .tags > p:hover {
-  color: #d6f3ff;
+  opacity: 0.8;
 }

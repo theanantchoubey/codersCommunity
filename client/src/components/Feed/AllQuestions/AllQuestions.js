@@ -55,7 +55,8 @@ function AllQuestions({ data }) {
                 style={{
                   margin: "10px 5px",
                   padding: "5px 10px",
-                  backgroundColor: "#007cd446",
+                  backgroundColor: "#000",
+                  color: "#fff7f3",
                   borderRadius: "3px",
                 }}
               >
@@ -69,8 +70,8 @@ function AllQuestions({ data }) {
               <Avatar
                 style={{
                   cursor: "pointer",
-                  background: "#9fbeff",
-                  color: "#263142",
+                  background: "#000",
+                  color: "#fff7f3",
                   marginRight: "5px",
                 }}
                 {...stringAvatar(data?.user?.displayName)}

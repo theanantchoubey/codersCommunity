@@ -111,6 +111,7 @@ function Index() {
                 <div className="input-field">
                   <p>Username</p>
                   <input
+                    required
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     type="text"
@@ -119,6 +120,7 @@ function Index() {
                 <div className="input-field">
                   <p>Email</p>
                   <input
+                    required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     type="text"
@@ -127,6 +129,7 @@ function Index() {
                 <div className="input-field">
                   <p>Password</p>
                   <input
+                    required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     type="password"
@@ -137,6 +140,7 @@ function Index() {
                   onClick={handleRegister}
                   disabled={loading}
                   style={{
+                    // width: '100%',
                     marginTop: "10px",
                   }}
                 >
@@ -148,6 +152,7 @@ function Index() {
                 <div className="input-field">
                   <p>Email</p>
                   <input
+                    required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     type="text"
@@ -156,6 +161,7 @@ function Index() {
                 <div className="input-field">
                   <p>Password</p>
                   <input
+                    required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     type="password"
@@ -166,7 +172,7 @@ function Index() {
                   disabled={loading}
                   className="button"
                   style={{
-                    marginTop: "10px",
+                    marginTop: "15px",
                   }}
                 >
                   {loading ? "Logging in..." : "Login"}
@@ -179,7 +185,7 @@ function Index() {
               style={{
                 marginTop: "10px",
                 textAlign: "center",
-                color: "#0095ff",
+                color: "#1067d8",
                 textDecoration: "underline",
                 cursor: "pointer",
               }}

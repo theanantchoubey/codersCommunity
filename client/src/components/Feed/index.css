@@ -1,7 +1,7 @@
 .stack-index {
   min-width: fit-content;
   display: flex;
-  color: #fff !important;
+  color: #000 !important;
   min-height: 85vh;
 }
 

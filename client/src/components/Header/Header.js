@@ -65,8 +65,8 @@ function Header() {
             <Avatar
               style={{
                 cursor: "pointer",
-                background: "#353536",
-                color: "#fff",
+                background: "#fff7f3",
+                color: "#000",
               }}
               {...stringAvatar(user && user.displayName)}
               onClick={() => auth.signOut()}

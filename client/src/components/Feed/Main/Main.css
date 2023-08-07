@@ -1,8 +1,10 @@
 .main {
+  width: 60%;
   display: flex;
   padding: 30px 10px;
-  flex: 0.75;
+  background-color: #fff7f3;
   flex-direction: column;
+  border: 1px solid #000;
 }
 
 .main-container {
@@ -20,6 +22,7 @@
 }
 
 .main-top > h2 {
+  color: #000;
   font-weight: 400;
   font-size: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -27,9 +30,8 @@
 
 button {
   padding: 10px;
-  background-color: #0095ff;
-  color: #fff;
-  border: 2px solid #007cd446;
+  color: #000;
+  border: 2px solid #000;
   outline: none;
   border-radius: 3px;
   cursor: pointer;
@@ -40,10 +42,10 @@ button {
   flex-direction: row;
   align-items: center;
   font-size: 1.1rem;
-  color: #fff;
+  color: #000;
   justify-content: space-between;
   padding: 0px 0px 10px 0px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #000;
   margin-top: 10px;
 }
 
@@ -54,34 +56,34 @@ button {
 
 .main-tabs {
   display: flex;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   margin-right: 20px;
   border-radius: 3px;
 }
 
 .main-tab {
   padding: 5px;
-  border-right: 1px solid #fff;
+  border-right: 1px solid #000;
 }
 .main-tab > a {
   font-size: small;
-  color: #fff;
+  color: #000;
 }
 .main-tab:hover > a, .main-tab:hover{
   font-size: small;
-  background-color: #fff;
+  background-color: #fff7f3;
   color: #000;
 }
 
 .main-filter-item {
   display: flex;
   padding: 5px;
-  border: 1px solid #9fbeff;
+  border: 1px solid #000;
   border-radius: 3px;
-  background-color: #00ccff17;
+  background-color: #fff7f3;
   font-size: small;
   align-items: center;
-  color: #fff;
+  color: #000;
   cursor: pointer;
 }
 
@@ -92,19 +94,20 @@ button {
 }
 
 .button {
-  background-color: #385577;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 .button:hover {
   cursor: pointer;
-  background-color: #9fbeff;
+  background-color: #000;
   color: #263142;
 }
 .question {
   display: flex;
   flex-direction: column;
   padding: 15px 0px;
-  border-bottom: 1px solid #eee;
+  padding: 0 20px;
+  border: 1px solid #000;
   width: 100%;
 }
 
@@ -116,6 +119,6 @@ pre {
 
 @media screen and (min-width: 768px) {
   .main {
-      flex: 0.6;
+      /* flex: 0.6; */
   }
 }

@@ -4,17 +4,17 @@ header {
   position: sticky;
   top: 0px;
   z-index: 1000;
-  min-height: 5vh;
-  color: #fff !important;
+  min-height:5vh;
+  color: #000 !important;
 }
 .header-container {
+  padding: 2px;
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  background-color: #0D1117;
-  box-shadow: 0px 0.5px 8px rgba(0, 0, 0, 0.178);
+  background-color: #ECDAD1;
 }
 
 .header-left {
@@ -33,7 +33,6 @@ header {
 }
 
 .header-left > a > img:hover {
-  background-color: #444e5c;
   cursor: pointer;
 }
 
@@ -46,7 +45,6 @@ header {
 }
 
 .header-left > h3:hover {
-  background-color: #2a313b;
   border-radius: 33px;
 }
 
@@ -59,22 +57,23 @@ header {
 .header-middle > .header-search-container {
   display: flex;
   padding: 10px 10px;
+  
   margin-right: 10px;
   border-radius: 3px;
-  border: 1px solid rgba(34, 34, 34, 0.233);
+  border: 1px solid #000;
 }
 
 .header-search-container > input {
   border: none;
   width: 100%;
-  background-color: #0D1117;
-  color: #fff;
+  background-color: transparent;
+  color: #000;
   margin-left: 5px;
   outline: none;
 }
 
 .header-search-container > .MuiSvgIcon-root {
-  color: #ccc;
+  color: #000000;
 }
 
 .header-right {
@@ -89,13 +88,12 @@ header {
 
 .header-right-container > .MuiSvgIcon-root {
   margin: 0px 15px;
-  color: #ddd;
+  color: #000;
   cursor: pointer;
 }
 
 .header-right-container > .MuiSvgIcon-root:hover {
-  background-color: #353536;
-  color: #ddd;
+  opacity: 0.8;
 }
 
 .header-right-container > img {

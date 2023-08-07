@@ -2,9 +2,8 @@
 .add-question {
   display: flex;
   width: 100%;
-  background-color: #263142 !important;
-  color: #fff;
-  /* height: 100vh; */
+  background-color: #fff7f3;
+  color: #000;
   justify-content: center;
 }
 
@@ -30,10 +29,7 @@
 .question-container {
   display: flex;
   padding: 15px;
-  background-color: #263142;
-  border: 1px solid #eee;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(66, 42, 42, 0.19);
+  border: 1px solid #000 !important;
 }
 
 .question-options {
@@ -55,35 +51,30 @@
 }
 
 .title > h3 {
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .title > input {
   margin: 5px 0px;
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #000;
   border-radius: 3px;
   outline: none;
+  background-color: #fff7f3;
 }
 
 .title > input::placeholder {
-  color: #ddd;
-}
-.title > input:focus {
-  border: 1px solid #0054ff;
-  box-shadow: 0 4px 8px 0 #0055ff23, 0 6px 20px 0 #0055ff11;
+  color: #747474;
 }
 
 .quill {
   height: 100%;
-  border: 2px;
+  border: 1px solid #000;
 }
 
 .react-quill {
   margin: 10px 0;
-  border-radius: 10px;
   color: #263142;
-  background-color: #fff;
 }
 
 .ql-editor {
@@ -92,7 +83,8 @@
 
 .tag-input {
   margin-top: 10px;
-  background-color: #fff;
+  border: 1px solid #000;
+  background-color: #fff7f3;
 }
 
 .button {
@@ -103,6 +95,6 @@
 }
 
 button:hover {
-  background-color: #9fbeff;
+  background-color: #000;
   color: #263142;
 }

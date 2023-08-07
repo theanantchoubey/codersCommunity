@@ -18,7 +18,7 @@ function Sidebar() {
             <div className="link">
               <div className="link-tag">
                 <PublicIcon />
-                <Link to="/">Question</Link>
+                <Link to="/">Discussion</Link>
               </div>
 
               <div className="tags">

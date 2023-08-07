@@ -1,10 +1,9 @@
 .auth {
   display: flex;
   flex-direction: column;
-  /* height: 90vh; */
   padding: 30px 0;
-  background-color: #263142;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 .auth-container {
@@ -33,14 +32,15 @@
   border-radius: 3px;
   color: rgba(0, 0, 0, 0.8);
   background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(66, 42, 42, 0.19);
+  border: 1px solid #000;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .single-option:hover {
-  box-shadow: 0 4px 8px 0 #0095ff15, 0 6px 20px 0 #0095ff52;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(66, 42, 42, 0.19);
+  opacity: 0.9;
 }
 
 .single-option > p {
@@ -61,10 +61,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid #8acbee;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(66, 42, 42, 0.19);
-  border-radius: 8px;
+  border: 1px solid #000;
 }
 
 .input-field {
@@ -72,14 +69,18 @@ img {
   flex-direction: column;
 }
 .button {
-  background-color: #385577;
-  color: #fff;
-  width: 100%;
+  background-color: #000;
+  color: white;
+  padding: 5px;
 }
+
 .button:hover {
   cursor: pointer;
-  background-color: #9fbeff;
-  color: #263142;
+  opacity: 0.8;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(143, 143, 143, 0.2),
+  0 3px 10px 0 rgba(66, 42, 42, 0.19);
 }
 .input-field > p {
   font-size: 1.1rem;
@@ -87,9 +88,11 @@ img {
 }
 
 .input-field > input {
+
   padding: 10px;
-  color: #fff;
-  border: 1px solid #0095ff8e;
+  border-radius: 10px;
+  color: #000;
+  border: 1px solid #000;
   background-color: transparent;
   border-radius: 3px;
   outline: none;

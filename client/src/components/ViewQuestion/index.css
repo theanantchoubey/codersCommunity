@@ -2,8 +2,8 @@
   height: auto;
 }
 .stack-index {
-  background-color: #263142;
-  color: #fff !important;
+  background-color: #f0e2db;
+  color: #000 !important;
 }
 .main-desc {
   display: flex;
@@ -22,21 +22,27 @@
 }
 
 .info > p > span {
-  color: #9fbeff;
+  color: #000;
   margin: 0 5px;
 }
 
 .arrow {
   font-size: 2rem;
-  color: #bdc7c9;
+  color: #000;
 }
 
 .all-options > .MuiSvgIcon-root {
-  color: #bdc7c9;
+  color: #0000;
   font-size: large;
   margin: 5px 0;
 }
-
+.all-questions{
+  padding: 20px 10px;
+}
+.answers, .question-container{
+  border: 1px solid #000;
+  background-color: transparent;
+}
 pre {
   display: flex;
   width: 90px;
@@ -51,13 +57,13 @@ pre {
 }
 .button:hover {
   cursor: pointer;
-  background-color: #9fbeff;
+  background-color: #000;
   color: #263142;
 }
 .comments > p:hover{
-  color: #9fbeff;
+  opacity: 0.8;
 }
 
 .main-top > h2, .question-answer > div, .author > small, .comments > p, .auth-details > p {
-  color: #fff;
+  color: #000;
 }

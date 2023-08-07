@@ -152,11 +152,11 @@ function MainQuestion() {
               Active<span>today</span>
             </p>
             <p>
-              Viewed<span>43times</span>
+              Viewed<span>43 times</span>
             </p>
           </div>
         </div>
-        <div className="all-questions">
+        <div className="all-questions question-container">
           <div className="all-questions-container">
             <div className="all-questions-left">
               <div className="all-options">
@@ -182,8 +182,8 @@ function MainQuestion() {
                   <Avatar
                     style={{
                       cursor: "pointer",
-                      background: "#9fbeff",
-                      color: "#263142",
+                      background: "#000",
+                      color: "#fff7f3",
                       marginRight: "5px",
                     }}
                     {...stringAvatar(questionData?.user?.displayName)}
@@ -225,7 +225,8 @@ function MainQuestion() {
                       style={{
                         margin: "5px 0px",
                         padding: "10px",
-                        border: "1px solid rgba(0, 0, 0, 0.2)",
+                        background: "transparent",
+                        border: "1px solid #000",
                         borderRadius: "3px",
                         outline: "none",
                       }}
@@ -254,7 +255,7 @@ function MainQuestion() {
           style={{
             flexDirection: "column",
           }}
-          className="all-questions"
+          className="all-questions answers"
         >
           <p
             style={{
@@ -271,7 +272,7 @@ function MainQuestion() {
                 borderBottom: "1px solid #eee",
               }}
               key={_q._id}
-              className="all-questions-container"
+              className="all-questions-container question-container"
             >
               <div className="all-questions-left">
                 <div className="all-options">
@@ -296,8 +297,8 @@ function MainQuestion() {
                     <Avatar
                       style={{
                         cursor: "pointer",
-                        background: "#9fbeff",
-                        color: "#263142",
+                        background: "#000",
+                        color: "#fff7f3",
                         marginRight: "5px",
                       }}
                       {...stringAvatar(_q?.user?.displayName)}
@@ -340,7 +341,7 @@ function MainQuestion() {
       <button
         onClick={handleSubmit}
         className="button"
-        style={{ marginTop: "80px" }}
+        style={{ marginTop: "70px" }}
       >
         Post your answer
       </button>
